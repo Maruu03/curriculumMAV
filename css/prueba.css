@@ -1,0 +1,10 @@
+.prueba{
+    display: grid;
+    align-content: space-between;
+
+    height: 50rem;
+}
+
+.rojo{
+    background-color: rojo;
+}
