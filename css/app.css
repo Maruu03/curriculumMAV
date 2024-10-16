@@ -19,31 +19,30 @@ html{
 }
 
 body{
-    background-color: var(--negro) ;
+    background-color: var(--negro);
 
     color: var(--blanco);
     font-size: 1.8rem;
     font-family: var(--fuente_secundaria);
-    margin: 0;
+    margin: 1rem 0rem;
 }
 
-h1, h2, h3{
+h1, h2, h3, h4{
     text-align: center;
     font-family: var(--fuentePrincipal);
-    margin: 0;
+    margin: 1rem 0rem;
 }
 
 h1{ font-size: 5rem;}
 
 h2{ 
-    font-size: 3rem; color: 
-    var(--principal);
+    font-size: 3rem; 
+    color: var(--principal);
 }
 
 h3{ font-size: 2.5rem;}
 
 h4{ font-size: 2rem;
-    font-family: var(--fuentePrincipal);
     color: var(--secundario);
 }
 
@@ -53,7 +52,7 @@ a{
 }
 
 section{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 .contenedor{
@@ -62,10 +61,6 @@ section{
 }  
 
 /* header */
-.centrarTexto{
-    text-align: center;
-}
-
 .barra-logo{
     height: 5rem;
 }
@@ -97,6 +92,7 @@ section{
         gap: 1rem;
     }
 }
+
 /* video */
 video{
     display: block;
@@ -105,7 +101,7 @@ video{
 
 .video{
     position: relative;
-    max-height: 60rem;
+    max-height: 50rem;
     min-height: 35rem;
     overflow: hidden;
 
@@ -124,7 +120,7 @@ video{
     text-align: center;
 }
 
-/*SKILLS*/
+/* SKILLS */
 
 .princ-subcontenedor{
     text-align: center;
@@ -207,13 +203,34 @@ video{
 
 /* Main */
 
+
+
+    /* languages */
+    .languages{
+        display: flex;
+        justify-content: space-evenly;
+
+        margin-top: 2rem;
+    }
+
+    .languages-flex h4, 
+    .languages-flex p{
+        color: #000000;
+        text-align: center;
+    }
+
+    .languages-flex{
+        width: 30rem;
+        background-color: var(--blanco);
+    }
+
 /* Form */
 
 .form{
     background-color: var(--principal);
     padding: 4rem 2rem;
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     
     border-radius: 3rem;
 }
@@ -224,6 +241,10 @@ video{
 
 .campo{
     text-align: center;
+}
+
+.campo label{
+    font-weight: 700;
 }
 
 .inputText{
@@ -239,8 +260,28 @@ video{
     margin-bottom: 2rem;
 }
 
+.inputText{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
 
-@media (min-width: 768px) {
+.form-submit{
+    text-align: center;
+}
+
+.form button{
+    background-color: rgb(199, 199, 199);
+    border: black 0.1rem solid;
+    padding: 1rem 3rem;
+
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: rgb(161, 161, 161);
+}
+
+@media (min-width: 868px) {
     .form-content{
         display: grid;
         grid-template-columns: 1fr 1fr;

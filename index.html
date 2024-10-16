@@ -118,12 +118,19 @@
             </ul>
         </section>
 
-        <section> <!--4-->
+        <section > <!--4-->
             <h2> Languages </h2>
-            <ul>
-                <li> Spanish – Native </li>
-                <li> English – Upper-Intermediate </li>
-            </ul>
+            <div class="languages">
+                <div class="languages-flex">
+                    <h4>Spanish</h4>
+                    <p>Native</p>
+                </div>
+                
+                <div class="languages-flex">
+                    <h4>English</h4>
+                    <p>Upper-Intermediate</p>
+                </div>
+            </div>
         </section>
 
         <section> <!--5-->
@@ -142,27 +149,27 @@
 
                 <div class="campo">
                     <label for="nombre"> Nombre: </label>
-                    <input class="inputText" type="text" id="nombre" name="nombre" required>
+                    <input class="inputText" type="text" id="nombre" name="nombre" placeholder="Nombre"  required>
                 </div>
 
                 <div class="campo">
                     <label for="apellido"> Apellido: </label>
-                    <input class="inputText" type="text" id="apellido" name="apellido" required>
+                    <input class="inputText" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
                 </div>
 
                 <div class="campo">
                     <label for="correo"> Correo: </label>
-                    <input class="inputText" type="email" id="email" name="email" required>
+                    <input class="inputText" type="email" id="email" name="email" placeholder="Correo" required>
                 </div>
 
                 <div class="campo">
                     <label for="telefono"> Telefono: </label>
-                    <input class="inputText" type="number">  
+                    <input class="inputText" type="telf" placeholder="Telefono">  
                 </div>
 
                 <div class="campo">
                     <label>Materias cursadas:</label><br>
-                    <input type="checkbox" name="habilidades" value="FDP"> FDP
+                    <input type="checkbox" name="habilidades" value="FDP"> FDP 
                     <input type="checkbox" name="habilidades" value="POO"> POO
                     <input type="checkbox" name="habilidades" value="Estructuras">Estructuras
                     <input type="checkbox" name="habilidades" value="DAWM">DAWM
