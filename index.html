@@ -132,43 +132,49 @@
         </section>
 
     </main>
-        
-    <form class="contenedor formulario">
-        <h2>Let's get in touch! </h2>
-        
-        <div>
-            <label for="nombre"> Nombre: </label>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
 
-        <div>
-            <label for="apellido"> Apellido: </label>
-            <input type="text" id="apellido" name="apellido" required>
-        </div>
+    <section>
+        <form class="form">
+            <div class="form-content">
+                <div>
+                    <h2>Let's get in touch! </h2>
+                </div>
 
-        <div>
-            <label for="correo"> Correo: </label>
-            <input type="email" id="email" name="email" required>
-        </div>
+                <div class="campo">
+                    <label for="nombre"> Nombre: </label>
+                    <input class="inputText" type="text" id="nombre" name="nombre" required>
+                </div>
 
-        <div>
-            <label for="telefono"> Telefono: </label>
-            <input type="number">  
-        </div>
+                <div class="campo">
+                    <label for="apellido"> Apellido: </label>
+                    <input class="inputText" type="text" id="apellido" name="apellido" required>
+                </div>
 
-        <div>
-            <label>Materias cursadas:</label><br>
-            <input type="checkbox" name="habilidades" value="FDP"> FDP
-            <input type="checkbox" name="habilidades" value="POO"> POO
-            <input type="checkbox" name="habilidades" value="Estructuras">Estructuras
-            <input type="checkbox" name="habilidades" value="DAWM">DAWM
-        </div>
+                <div class="campo">
+                    <label for="correo"> Correo: </label>
+                    <input class="inputText" type="email" id="email" name="email" required>
+                </div>
 
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
+                <div class="campo">
+                    <label for="telefono"> Telefono: </label>
+                    <input class="inputText" type="number">  
+                </div>
 
+                <div class="campo">
+                    <label>Materias cursadas:</label><br>
+                    <input type="checkbox" name="habilidades" value="FDP"> FDP
+                    <input type="checkbox" name="habilidades" value="POO"> POO
+                    <input type="checkbox" name="habilidades" value="Estructuras">Estructuras
+                    <input type="checkbox" name="habilidades" value="DAWM">DAWM
+                </div>
+            </div>
+
+            <div class="form-submit">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </section>
 
     <footer >
         <div class="grid">
