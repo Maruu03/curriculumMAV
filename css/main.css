@@ -1,0 +1,80 @@
+/* Main */
+    /* languages */
+.languages{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+.languages-flex h4, 
+.languages-flex p{
+    color: #000000;
+    text-align: center;
+}
+
+.languages-flex{
+    flex: 1;
+    max-width: 35rem;
+    background-color: rgb(246, 238, 238);
+}
+
+.languages-flex:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  /* SKILLS  */
+.princ-subcontenedor h4{
+    margin: 4rem 0rem;
+}
+
+.flex_skills{
+    margin: 0 auto;
+    max-width: 75%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 3rem 2rem;
+}
+
+.img_skills{
+    max-height: 7rem;      /* La imagen ocupa toda la altura disponible */
+    width: auto;       /* El ancho se ajusta automáticamente */
+    object-fit: cover; /* Recorta la imagen para llenar el área */
+}
+
+.img_skills:hover{
+    transform: scale(1.2);
+}
+
+    /* education */
+.centrado{
+    text-align: center;
+}
+
+    /* Relevant Projects*/
+.projects_grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.grid-project{
+    display: grid; 
+    place-items: center;
+    position: relative;
+}
+
+.grid-img{
+    width: 25rem;
+}
+
+@media (min-width: 768px){
+    .projects_grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}

@@ -19,12 +19,12 @@ html{
 }
 
 body{
-    background-color: var(--negro);
+    background-color: var(--blanco);
+    margin: 1rem 0rem;
 
-    color: var(--blanco);
+    color: var(--negro);
     font-size: 1.8rem;
     font-family: var(--fuente_secundaria);
-    margin: 1rem 0rem;
 }
 
 h1, h2, h3, h4{
@@ -37,7 +37,9 @@ h1{ font-size: 5rem;}
 
 h2{ 
     font-size: 3rem; 
-    color: var(--principal);
+    background-color: var(--principal);
+    color: var(--blanco);
+    padding: 1rem;
 }
 
 h3{ font-size: 2.5rem;}
@@ -48,11 +50,16 @@ h4{ font-size: 2rem;
 
 a{ 
     text-decoration: none; 
-    color: var(--blanco);
+    color: var(--negro);
+    font-weight: bold;
+}
+
+span{
+    font-weight: bold;
 }
 
 section{
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 
 .contenedor{
@@ -61,7 +68,7 @@ section{
 }  
 
 /* header */
-.barra-logo{
+.img-logo{
     height: 5rem;
 }
 
@@ -73,6 +80,8 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    margin: 1rem 0rem;
 }
 
 .nav-principal a:hover{
@@ -85,7 +94,7 @@ section{
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .nav-principal{
         display: flex;
         flex-direction: row;
@@ -127,102 +136,6 @@ video{
     padding: 1rem;
     margin-bottom: 1rem;
 }
-
-/* Relevant Projects*/
-.grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    padding: 3rem;
-}
-
-.grid-project{
-    display: grid; 
-    place-items: center;
-    position: relative;
-}
-
-.grid-img{
-    width: 25rem;
-}
-
-.grid-cambio:hover h3{
-    color: var(--principal);
-}
-
-    /* hover more info*/
-
-
-.image {
-    opacity: 1;
-    
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-  
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-
-    background-color: var(--principal);
-    color: var(--blanco);
-    font-size: 16px;
-    padding: 1.5rem 2rem;
-}
-
-.middle:hover{
-    background-color: var(--principalOscuro);
-}
-
-
-  
-.grid-cambio:hover .image {
-    opacity: 0.3;
-}
-  
-.grid-cambio:hover .middle {
-    opacity: 1;
-}
-
-.grid-cambio:hover .middle {
-    opacity: 1;
-}
-
-@media (min-width: 768px){
-    .grid{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5rem;
-    }
-}
-
-/* Main */
-
-
-
-    /* languages */
-    .languages{
-        display: flex;
-        justify-content: space-evenly;
-
-        margin-top: 2rem;
-    }
-
-    .languages-flex h4, 
-    .languages-flex p{
-        color: #000000;
-        text-align: center;
-    }
-
-    .languages-flex{
-        width: 30rem;
-        background-color: var(--blanco);
-    }
 
 /* Form */
 
@@ -296,8 +209,20 @@ video{
 }
 
 /* footer */
+.grid_footer{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 2rem;
+    gap: 5rem;
+}
 
 .links-footer{
     text-align: right;
 }
+
+a:hover svg {
+    stroke: var(--principal); /* Cambia el color del trazo (stroke) en hover */
+}
+
 
